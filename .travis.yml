@@ -38,10 +38,7 @@ jobs:
       os: linux
       dist: xenial
       script: echo 123 > /dev/null
-      script: python --version
-      script: pipenv --version
-      script: which pipenv
-      script: ls
+      script: pipenv install
 
 #      script: iris -h
 #      script: pipenv run iris sample -j -vk -n -t test_2

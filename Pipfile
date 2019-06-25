@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyautogui = "==0.9.41"
+gitpython = "==2.1.11"
+
+# Platform dependencies
+xlib = {platform_system = "== 'Linux'",version = "==0.21"}
+
+[dev-packages]
+pylint = "*"
+pep8 = "*"
+
+[requires]
+python_version = "3.7"
