@@ -31,6 +31,7 @@ before_script:
     #- "export DISPLAY=:99.0"
     #- "Xvfb :99 -screen 0 1920x1080x24+32 +extension GLX +extension RANDR > /dev/null 2>&1 &"
     #- sleep 3 # give xvfb some time to start
+  - 'cd /home/travis/.local/share'
 
 with_content_shell: true
 
@@ -40,8 +41,9 @@ jobs:
     - stage: Ubuntu 16.04 basic test
       os: linux
       dist: xenial
+      #script: ls
+      #script: pipenv shell
       script: ls
-      script: pipenv shell
 
 
 # Email notification
